@@ -1,0 +1,151 @@
+body {
+  background: #f7f9fa;
+  padding: 0px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+.header{
+  background-color: #011222;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 2px 8px 2px rgba(0,0,0,.5);
+  .page-header {
+    height: 104px;
+    max-width: 1440px;
+    margin: 0 auto;
+    .logo {
+      background: url("../../../logo.svg");
+      width: 371px;
+      height: 70px;
+      top: 10px;
+      display: block;
+      position: relative;
+      a {
+        display: block;
+        width: 371px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+.content_above {
+  position: relative;
+  top: 100px;
+}
+.region--content-above {
+  display: block !important;
+}
+
+.region--content-below {
+  background: #F16336;
+  margin: 0px;
+}
+
+.footer {
+  &::before {
+    border-top: 1px solid #f2f2f2;
+    content: "";
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  background: #F16336;
+  height: 230px;
+}
+
+.webform-contact {
+  background: #F16336;
+  display: flex;
+  flex-flow: row wrap;
+
+  .img-contact {
+    width: 50%;
+    background: url("../../../images/contact.jpg");
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+
+    p {
+      width: 200px;
+      font-size: 30px;
+      color: #F2F2F2;
+      margin-left: 120px;
+
+      .text-orange {
+        color: #F16336
+      }
+    }
+  }
+
+  .form-contact {
+    padding-left: 80px;
+    color: #F2F2F2;
+    h2 {
+      position: relative;
+      padding-left: 20px;
+    }
+    h2::before {
+      border-left: 2px solid #f2f2f2;
+      content: "";
+      display: block;
+      height: 50px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+
+    input#edit-actions-submit {
+      background-color: #F2F2F2;
+      border: none;
+      color: #000;
+      height: 42px;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.region--content-below{
+  .proposal {
+    color: #F2F2F2;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    padding-left: 20px;
+  }
+}
+
+.contact-header{
+  color: #F2F2F2;
+  position: absolute;
+  display: flex;
+  top: 20px;
+  flex-wrap: wrap;
+  right: 20%;
+  .contact-telefono{
+    margin-right: 30px;
+    padding-top: 5px;
+  }
+  .contact-bottom {
+    text-align: center;
+    a{
+      background-color: #f16336;
+      border: none;
+      border-radius: 10px;
+      color: #f2f2f2;
+      display: inline-block;
+      font-size: 16px;
+      height: 42px;
+      padding-top: 8px;
+      text-decoration: none;
+      width: 130px;
+      font-size: 600;
+    }
+  }
+}

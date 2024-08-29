@@ -1,0 +1,25 @@
+.region--footer-top.grid-full {
+  display: block;
+}
+
+.custom_footer {
+  // background: url("../../../images/footer.png");
+  width: 1272px;
+  height: 116px;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  .canvas_logo {
+    width: 371px;
+    height: 70px;
+    background: url("../../../images/logo_white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    scale: 90%;
+  }
+  .canvas_copy {
+    width: 230px;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+}

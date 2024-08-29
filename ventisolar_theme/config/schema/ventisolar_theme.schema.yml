@@ -1,0 +1,8 @@
+# Schema for the configuration files of the ventisolar theme.
+ventisolar_theme.settings:
+  type: theme_settings
+  label: 'ventisolar settings'
+  mapping:
+    font_size:
+      type: integer
+      label: Font size

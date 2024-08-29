@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Olivero's theme override to display the header region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+
+<div class="page-header">
+  <div class="logo">
+    <a href="/"></a>
+  </div>
+  <div class="contact-header">
+    <div class="contact-telefono">ph 11 1234 - 8877</div>
+    <div class="contact-bottom"><a href="#block-contact-us">CONCACT</a></div>
+  </div>
+  {{ content }}
+</div>

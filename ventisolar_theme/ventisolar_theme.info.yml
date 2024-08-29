@@ -1,0 +1,22 @@
+name: ventisolar
+type: theme
+base theme: olivero
+description: theme custom ventisolar
+package: ventisolar
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - ventisolar_theme/global
+features:
+  favicon: true
+favicon:
+  use_default: false
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  breadcrumb: 'Breadcrumb'
+  content_above: 'Content Above'
+  content: 'Content'
+  content_below: 'Content Below'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'

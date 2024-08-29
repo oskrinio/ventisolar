@@ -1,0 +1,292 @@
+@import "~/node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../utils/units";
+
+.banner-carousel {
+  .glide__slide {
+    height: 33.5rem;
+    position: relative;
+    @media screen and (min-width: $tablet-landscape) {
+      height: 26.25rem;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 30rem;
+    }
+    @media screen and (min-width: $desktop-hd) {
+      height: 41.75rem;
+    }
+  }
+  .background-slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    > video {
+      margin-top: 0;
+      max-width: inherit;
+      padding-bottom: 56.6%;
+      position: absolute;
+      @media screen and (min-width: $tablet-landscape) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .wrap-description {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    max-width: $desktop;
+    margin: 0 auto;
+    padding: 0 3rem;
+    position: relative;
+    width: 100%;
+    @media screen and (min-width: $tablet-portrait) {
+      padding: 0 8.1875rem;
+    }
+    @media screen and (min-width: $tablet-landscape) {
+      padding: 0 7.0625rem;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0 12.8125rem;
+    }
+    @media screen and (min-width: $desktop-hd) {
+      padding: 0 27.8125rem;
+      max-width: $desktop-hd;
+    }
+    .info {
+      width: 100%;
+      text-align: center;
+      @media screen and (min-width: $tablet-landscape) {
+        width: 28.625rem;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 31.625rem;
+      }
+      @media screen and (min-width: $desktop-hd) {
+        width: 55.75rem;
+      }
+      a {
+        height: 42px;
+        display: inline-block;
+        padding-top: 12px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #F16336;
+        border: none;
+        text-decoration: none;
+        color: #F2F2F2;
+        font-size: 16px;
+      }
+    }
+    h3 {
+      color: #F16336;
+      font-weight: 600;
+      font: $weight-medium 2.75rem/3rem $font-heebo;
+      margin: 0 0 1rem;
+      text-transform: inherit;
+      @media screen and (min-width: $tablet-portrait) {
+        margin-bottom: 1.5rem;
+      }
+      @media screen and (min-width: $tablet-landscape) {
+        margin-bottom: 0.625rem;
+      }
+      @media screen and (min-width: $desktop) {
+        font-size: 3rem;
+        line-height: 3.25rem;
+        margin-bottom: 2rem;
+      }
+    }
+    p {
+      color: $white;
+      font: $weight-regular 1rem/1.5rem $font-heebo;
+      margin: 0;
+      @media screen and (min-width: $tablet-portrait) {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+      }
+      @media screen and (min-width: $desktop-hd) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+    .btn--medium {
+      background: $white;
+      border: none;
+      color: $interaction-indigo;
+      cursor: pointer;
+      font: $weight-medium 0.875rem/1 $font-heebo;
+      margin: 1rem 0 0;
+      @media screen and (min-width: $tablet-portrait) {
+        font-size: 1rem;
+        line-height: 1.125rem;
+        margin-top: 1.5rem;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-top: 2rem;
+      }
+      @media screen and (min-width: $desktop-hd) {
+        border-radius: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.625rem;
+        padding: 1.5rem 3.875rem;
+      }
+      &:hover {
+        background: #F16336;
+        color: $white;
+      }
+    }
+  }
+  .glide__arrow {
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid $white;
+    border-radius: 50%;
+    bottom: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    opacity: 1;
+    padding: 0;
+    position: absolute;
+    width: 2rem;
+    @media screen and (min-width: $tablet-portrait) {
+      bottom: inherit;
+      margin-top: -1rem;
+      top: 50%;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 2.5rem;
+      margin-top: -1.25rem;
+      width: 2.5rem;
+    }
+    @media screen and (min-width: $desktop-hd) {
+      height: 3.25rem;
+      margin-top: -1.625rem;
+      width: 3.25rem;
+    }
+    &:after {
+      color: #F2F2F2;
+      font-family: $icomoon-font-family;
+      font-size: 1.125rem;
+      @media screen and (min-width: $desktop-hd) {
+        font-size: 1.75rem;
+      }
+    }
+    &:hover {
+      background-color: #F16336;
+      &:after {
+        color: $white;
+        font-weight: bold;
+      }
+    }
+  }
+  .glide__arrow--left {
+    left: 1.75rem;
+    @media screen and (min-width: $tablet-portrait) {
+      left: 2.4375rem;
+    }
+    @media screen and (min-width: $tablet-landscape) {
+      left: 2rem;
+    }
+    @media screen and (min-width: $desktop) {
+      left: 2.5rem;
+    }
+    @media screen and (min-width: $desktop-hd) {
+      left: 15rem;
+    }
+    &:after {
+      content: "<";
+    }
+  }
+  .glide__arrow--right {
+    right: 1.75rem;
+    @media screen and (min-width: $tablet-portrait) {
+      right: 2.4375rem;
+    }
+    @media screen and (min-width: $tablet-landscape) {
+      right: 2rem;
+    }
+    @media screen and (min-width: $desktop) {
+      right: 2.5rem;
+    }
+    @media screen and (min-width: $desktop-hd) {
+      right: 15rem;
+    }
+    &:after {
+      content: ">";
+    }
+  }
+  .glide__bullets {
+    bottom: 4.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @media screen and (min-width: $tablet-landscape) {
+      bottom: 2.25rem;
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: 35%;
+    }
+    @media screen and (min-width: $desktop-hd) {
+      bottom: 3rem;
+    }
+    .glide__bullet {
+      background-color: $white;
+      border: none;
+      border-radius: 50%;
+      height: 0.5rem;
+      margin-right: 1.25rem;
+      opacity: 1;
+      padding: 0;
+      width: 0.5rem;
+      @media screen and (min-width: $tablet-portrait) {
+        height: 0.75rem;
+        margin-right: 2rem;
+        width: 0.75rem;
+      }
+      @media screen and (min-width: $desktop-hd) {
+        height: 1rem;
+        width: 1rem;
+        margin-right: 2.5em;
+      }
+      &:hover,
+      &.glide__bullet--active {
+        background-color: #F16336;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .border_carousel{
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    .rod_orange{
+      background-color: #F16336;
+      height: 55px;
+      width: 40%;
+      transform: skew(-20deg);
+    }
+    .rod_white{
+      background-color: #F2F2F2;
+      height: 55px;
+      top: -55px;
+      position: relative;
+      transform: skew(-20deg);
+      width: 59%;
+    }
+  }
+}
+
+.region--content-above{
+  background-color: #011222;
+}

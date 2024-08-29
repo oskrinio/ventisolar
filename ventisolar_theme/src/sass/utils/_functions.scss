@@ -1,0 +1,15 @@
+@use "sass:math";
+
+// Convert pixels to rems
+@function gu_rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-unit($pxval);
+  }
+
+  $base: $rem-base;
+  @if not unitless($base) {
+    $base: strip-unit($base);
+  }
+
+  @return  math.div($pxval, $base) * 1rem;
+}

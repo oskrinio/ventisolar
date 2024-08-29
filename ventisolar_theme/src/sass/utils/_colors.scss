@@ -1,0 +1,136 @@
+:root {
+  --desktop-text: #444;
+  --desktop-header-bg: #ffffff;
+  --desktop-button-color: #6d5df9;
+}
+$text-font-color: var(--desktop-text);
+$backgroud-header: var(--desktop-header-bg);
+$interaction-indigo: var(--desktop-button-color);
+$bk-color: #f4f6f9;
+$black-15: rgb(0 0 0 / 15%);
+$green: #bfd732;
+$white: #fff;
+$gray: #6c757d;
+
+/* legacy colors*/
+$black-u: #2a2a2f;
+$black-u-dark: #1f1f1f;
+$font-gray-u: #414760;
+$gray: gray;
+$navbar-offcanvas-bg-color: $black-u;
+$error: #ed383e;
+
+/*colors*/
+$filled-black: #444444;
+$filled-gl-green: #bfd733;
+$filled-med-purple: #9633d7;
+$filled-purple: #662d91;
+$filled-dark-purple: #4a1f87;
+$filled-blue: #689dff;
+$filled-dark-blue: #002333;
+$filled-red: #e64915;
+$filled-light-cyan: #48f9d7;
+$filled-cp-black: #000;
+$filled-gray: #cacaca;
+$filled-whitsmoke: #fcfcfc;
+$filled-light-grey: #f5f6f7;
+$filled-grey: #ececec;
+$filled-dark-grey: #b7b7b7;
+$filled-dark-green: #90a128;
+$filled-opigno-green: #c2e76b;
+$filled-dark-cyan: #63e3cf;
+$filled-cp-green: #bfd732;
+$filled-violet: #4a1e87;
+$filled-pink: #f073b7;
+$mayre-black: #1d1d1b;
+$paso-black: #3c3c3b;
+$payne-grey: #414142;
+$malibu-blue: #5bb4d8;
+$porcelain: #f7f8f9;
+$gallery: #ededed;
+$gray: #858585;
+$white_lilac: #f8f9fd;
+
+/*- difficulty -*/
+$filled-beginner: #39b54a;
+$filled-intermediate: #f7931e;
+$filled-advanced: #e61587;
+$filled-magenta: #f073b7;
+
+/* from integration with my growt */
+$interaction-indigo: #6d5df9;
+$interaction-indigo--dk: #5446c9;
+$interaction-indigo--dp: #43399c;
+$interaction-indigo--hover: #d9d7f9;
+$interaction-indigo--hover-dp: #c5c0f9;
+$unified-green: #bed733;
+$gu-black-opacity: rgba(68, 68, 68, 0.05);
+$unified-grey: #dddddd;
+$unified-light-black: #292929;
+
+$gu-black: #444444;
+$gu-grey--dk: #c3d0dd;
+$gu-grey: #dce6f1;
+$gu-grey--lt: #f9fafe;
+
+$gu-green: #39b579;
+$gu-red: #d82243;
+$gu-yellow: #f4c82d;
+
+/*- text -*/
+$gu-text--gray: #6b7782;
+
+/* backgrounds */
+$bg-light-gray: $gu-grey--lt;
+
+$studio-continuous-evolution: #9d807c;
+$studio-cloud-ops: #9b83ae;
+
+/* - utils -*/
+$shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+$theme-name: "university_aristotle";
+
+$clr-navy: #2f3758;
+$solitude: #e8ecf2;
+$pattens_blue: #dce6f1;
+$bck_job: #f3f6f9;
+$bck_job_2: #f8f9fb;
+$dark-gray: #a1a1a1;
+$ghost-white: #f6f5ff;
+$chablis: #fde6e1;
+$bluish-grey--dk: #c3d0dd;
+
+$bluish-gray: #6b7782;
+$bluish-gray-70: rgba(107, 119, 130, 0.7);
+$shamrock: #34d1b3;
+$lavender: #f9fafe;
+$filled-dark-cyan-30: rgba(99, 277, 207, 0.3);
+$selago: #eee4fb;
+$foam: #ccf3fb;
+$frostee: #e1f4e3;
+$cinderella: #fde6e1;
+$lightning-yellow-33: rgba(249, 197, 15, 0.2);
+$iron: #dcdfdf;
+
+/* from multiple-select */
+
+$light-gray-shadow-1: #aaa;
+$cultured: #f4f4f4;
+$light-gray-shadow-2: #ddd;
+$light-gray-shadow-3: #999;
+$light-gray-shadow-4: #eeeeee;
+
+$in-progress: #ccf3fb;
+$pending: rgba(249, 197, 15, 0.2);
+$passed: #eee4fb;
+
+$bk-admin: #f5f5f5;
+$border-admin: #d5d5d5;
+$blue-light: #2e98c2;
+
+$cord: #abb9c6;
+
+$G4G-secondary: #68747f;
+$G4G-pink: #dd33b7;
+$G4G-interaction-indigo-dark: #574ac7;

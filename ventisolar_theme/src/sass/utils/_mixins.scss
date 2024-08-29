@@ -1,0 +1,330 @@
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
+
+// Calculate height layout
+@mixin dif-witch-footer {
+  @media (min-width: $desktop) {
+    height: calc(100vh - gu_rem(72.11));
+  }
+
+  @media (min-width: $desktop-hd) {
+    height: calc(100vh - gu_rem(92.06));
+  }
+}
+
+@mixin display-flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin inline-flex {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+  -moz-flex-grow: $grow;
+  -ms-flex-grow: $grow;
+  flex-grow: $grow;
+}
+
+// Flex shrink
+// - applies to: flex item shrink factor
+// <number>
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+  -moz-flex-shrink: $shrink;
+  -ms-flex-shrink: $shrink;
+  flex-shrink: $shrink;
+}
+
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width>
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+  -moz-flex-basis: $width;
+  -ms-flex-basis: $width;
+  flex-basis: $width;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+  -moz-align-content: $align;
+  -ms-align-content: $align;
+  align-content: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  -ms-flex-align: $align;
+  align-items: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+  -moz-align-self: $align;
+  -ms-align-self: $align;
+  align-self: $align;
+}
+
+@mixin flex-align-center {
+  @include flexbox;
+  @include justify-content(center);
+  @include align-content(center);
+}
+
+@mixin flex-column-center {
+  @include flexbox;
+  @include flex-direction(column);
+  @include flex(1);
+  @include justify-content(center);
+}
+
+@mixin flex-row-wrap {
+  @include flexbox;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+}
+
+@mixin flex-align-items-center {
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+@mixin inline-flex-center {
+  @include inline-flex;
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+@mixin border-top-radius($value) {
+  border-top-left-radius: $value;
+  border-top-right-radius: $value;
+}
+
+@mixin border-bottom-radius($value) {
+  border-bottom-left-radius: $value;
+  border-bottom-right-radius: $value;
+}
+
+@mixin layout {
+  margin: 0 auto;
+  padding: 0 gu_rem(28);
+  @media screen and (min-width: $tablet-portrait) {
+    padding: 0 gu_rem(64);
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0 gu_rem(100);
+  }
+  @media screen and (min-width: $desktop-hd) {
+    box-sizing: content-box;
+    padding: 0 gu_rem(444);
+    width: calc($desktop-hd - 2 * gu_rem(444));
+  }
+}
+
+@mixin style-family {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin printBeforeIcon($content) {
+  &::before {
+    @include style-family();
+    content: $content;
+  }
+}
+@mixin printAfterIcon($content) {
+  &::after {
+    @include style-family();
+    content: $content;
+  }
+}
+
+@mixin textAreaBox() {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: gu_rem(12) !important;
+  .form-item {
+    &.js-form-type-textarea {
+      border-radius: gu_rem(8);
+      border: gu_rem(1) solid $pattens_blue;
+      overflow: hidden;
+
+      &.edited {
+        border-color: $interaction-indigo;
+      }
+      .cke_chrome {
+        border: none;
+      }
+      .cke_top {
+        background-color: $white;
+        border-color: $pattens_blue;
+      }
+      .visually-hidden,
+      .cke_bottom {
+        display: none;
+      }
+    }
+  }
+
+  > .form-wrapper {
+    width: 100%;
+    &[data-drupal-selector="edit-message-format"] {
+      display: none;
+    }
+  }
+}
+
+@mixin status() {
+  border-radius: gu_rem(4);
+  color: $gu-black;
+  font: $weight-medium 0.875rem/0.875rem $font-heebo;
+  padding: gu_rem(6) gu_rem(12);
+  text-transform: capitalize;
+  width: fit-content;
+  &.in-progress {
+    background-color: $in-progress;
+  }
+  &.pending {
+    background-color: $pending;
+  }
+  &.passed {
+    background-color: $passed;
+  }
+}
+
+@mixin circleProgress() {
+  svg {
+    height: gu_rem(60);
+    width: gu_rem(60);
+    circle {
+      cx: gu_rem(30);
+      cy: gu_rem(30);
+      r: gu_rem(27);
+      stroke: $gu-grey;
+      stroke-width: gu_rem(6);
+      transform: none;
+      &:last-of-type {
+        transform: rotate(-90deg);
+        stroke: $filled-dark-cyan;
+      }
+    }
+  }
+  span {
+    font: $weight-medium 0.875rem/0.875rem $font-heebo;
+    position: absolute;
+  }
+}
+
+@mixin anchor() {
+  color: $gu-black;
+  text-decoration: none;
+
+  &:hover {
+    color: $interaction-indigo;
+  }
+}

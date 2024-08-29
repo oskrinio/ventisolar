@@ -1,0 +1,59 @@
+# Main theme library.
+global:
+  js:
+    dist/js/ventisolar-theme.min.js: {}
+  css:
+    base:
+      dist/css/base/elements.min.css: {}
+    component:
+      dist/css/components/block.min.css: {}
+      dist/css/components/breadcrumb.min.css: {}
+      dist/css/components/field.min.css: {}
+      dist/css/components/form.min.css: {}
+      dist/css/components/header.min.css: {}
+      dist/css/components/menu.min.css: {}
+      dist/css/components/messages.min.css: {}
+      dist/css/components/node.min.css: {}
+      dist/css/components/sidebar.min.css: {}
+      dist/css/components/table.min.css: {}
+      dist/css/components/tabs.min.css: {}
+      dist/css/components/buttons.min.css: {}
+    layout:
+      dist/css/layouts/layout.min.css: {}
+    theme:
+      dist/css/theme/print.min.css: { media: print }
+
+slider:
+  version: 1.0.0
+  css:
+    theme:
+      dist/css/blocks/slider.min.css: { minified: true }
+  js:
+    dist/js/slider.min.js: { minified: true }
+
+general_block_benefits:
+  css:
+    theme:
+      dist/css/blocks/benefits-block.min.css: {}
+
+general_block_solar:
+  css:
+    theme:
+      dist/css/blocks/solar-block.min.css: {}
+
+general_block_content_node:
+  css:
+    theme:
+      dist/css/blocks/content-node-block.min.css: {}
+
+general_block_footer:
+  css:
+    theme:
+      dist/css/blocks/footer-block.min.css: {}
+
+general_block_menu:
+  css:
+    theme:
+      dist/css/blocks/menu-block.min.css: {}
+  js:
+    dist/js/menu_block.min.js: { minified: true }
